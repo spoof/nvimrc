@@ -81,3 +81,4 @@ nnoremap <leader>1 :call SetSoftContrast()<cr>
 nnoremap <leader>2 :call SetHardContrast()<cr>
 
 call SetSoftContrast()
+" colorscheme nova

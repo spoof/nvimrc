@@ -17,7 +17,7 @@ EOF
 endif
 
 " Braceless
-autocmd FileType python BracelessEnable
+autocmd FileType python BracelessEnable  +fold
 
 " python.vim
 let python_highlight_all = 1

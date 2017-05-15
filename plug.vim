@@ -82,9 +82,11 @@ Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'gregsexton/gitv'
 Plug 'mattn/gist-vim'
+Plug 'lambdalisue/vim-gita'
 
 " python
-Plug 'hdima/python-syntax', { 'for': 'python' }
+" Plug 'hdima/python-syntax', { 'for': 'python' }
+Plug 'vim-python/python-syntax', { 'for': 'python' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'fs111/pydoc.vim', { 'for': 'python' }
 Plug 'alfredodeza/pytest.vim', { 'for': 'python' }
@@ -133,12 +135,7 @@ Plug 'MarcWeber/vim-addon-local-vimrc'
 
 " other staff
 Plug 'ryanss/vim-hackernews'
-
-" Task management
-Plug 'vimwiki/vimwiki'
-Plug 'tbabej/taskwiki', { 'do': 'pip install --upgrade git+git://github.com/tbabej/tasklib@develop' }
-Plug 'powerman/vim-plugin-AnsiEsc/'
-Plug 'farseer90718/vim-taskwarrior'
+Plug 'gerw/vim-HiLinkTrace'
 
 " Theme
 Plug 'ryanoasis/vim-devicons'
@@ -157,5 +154,18 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'altercation/vim-colors-solarized'
 Plug 'alem0lars/vim-colorscheme-darcula'
 Plug 'rakr/vim-two-firewatch'
+Plug 'davidklsn/vim-sialoquent'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'joshdick/onedark.vim'
+Plug 'romainl/Apprentice'
+Plug 'rakr/vim-one'
+Plug 'cocopon/iceberg.vim'
+Plug 'rhysd/vim-color-spring-night'
+Plug 'kamwitsta/mythos'
+Plug 'kamwitsta/nordisk'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'trevordmiller/nova-vim'
 
 call plug#end()

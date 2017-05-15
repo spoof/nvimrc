@@ -185,7 +185,7 @@ let g:gundo_width = 60
 " }}}
 
 " YankRing {{{
-let yankring_history_dir = $HOME."/.vim/tmp/"
+let yankring_history_dir = $HOME."/.config/nvim/tmp/"
 if !isdirectory(yankring_history_dir)
     call mkdir(yankring_history_dir, "p")
 endif
@@ -269,8 +269,9 @@ endif
 " }}}
 
 " FZF {{{
+let $FZF_DEFAULT_OPTS = '--reverse'
 let g:fzf_nvim_statusline = 0
-let g:fzf_layout = { 'window': 'enew', 'options': '--reverse' }
+let g:fzf_layout = { 'window': 'enew' }
 let g:fzf_command_prefix = 'FZF'
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 "
@@ -318,7 +319,7 @@ nnoremap <silent> <leader>fr :FZFHistory<cr>
 nnoremap <silent> <leader>fb :FZFBuffers<cr>
 " }}}
 
-" {{{ jsx 
+" {{{ jsx
 let g:jsx_ext_required = 0
 " }}}
 "
