@@ -55,7 +55,6 @@ let g:gruvbox_contrast_dark = 'hard' " hard, medium
 let g:gruvbox_invert_selection = 0
 let g:gruvbox_sign_column = 'bg0'
 let g:gruvbox_vert_split = 'bg0'
-" }}}
 
 function! SetSoftContrast()
     let g:gruvbox_contrast_dark = 'soft' " hard, medium
@@ -80,5 +79,10 @@ endfunction
 nnoremap <leader>1 :call SetSoftContrast()<cr>
 nnoremap <leader>2 :call SetHardContrast()<cr>
 
-call SetSoftContrast()
+" call SetSoftContrast()
+" }}}
+
 " colorscheme nova
+
+" let g:neodark#background = '#2e2e2e'
+colorscheme neodark
