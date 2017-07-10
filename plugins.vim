@@ -197,31 +197,22 @@ nnoremap C-y :YRShow<CR>
 " }}}
 
 " Neomake {{{
-let g:neomake_python_enabled_makers = ['flake8']
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_jsx_enabled_makers = ['eslint']
-let g:neomake_verbose = 0
-autocmd! BufWritePost * Neomake
-let g:neomake_error_sign = {
-            \ 'text': '✖',
-            \ 'texthl': 'GruvboxRed',
-            \ }
+let g:neomake_list_height = 4
+
+let g:neomake_error_sign = {'text': '✖', 'texthl': 'NeomakeErrorSign'}
 let g:neomake_warning_sign = {
-            \ 'text': '⚠',
-            \ 'texthl': 'GruvboxOrange',
+            \   'text': '⚠',
+            \   'texthl': 'NeomakeWarningSign',
             \ }
-" let g:neomake_error_sign = {
-"             \ 'text': '✖',
-"             \ 'texthl': 'ErrorMsg',
-"             \ }
-" let g:neomake_warning_sign = {
-"             \ 'text': '⚠',
-"             \ 'texthl': 'WarningMsg',
-"             \ }
-"
+let g:neomake_message_sign = {
+            \   'text': '➤',
+            \   'texthl': 'NeomakeMessageSign',
+            \ }
+let g:neomake_info_sign = {'text': 'ℹ', 'texthl': 'NeomakeInfoSign'}
+
 autocmd! BufWritePost * Neomake
-autocmd! FileType python map <buffer> <leader>8 :Neomake<CR>
-" au BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
 " }}}
 
 " Shougo/echodoc {{{
