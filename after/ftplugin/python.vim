@@ -71,3 +71,7 @@ nmap <silent><Leader>te <Esc>:Pytest error<CR>
 " <Leader>0: Run the visually selected code in python and replace it with the
 " " output
 vnoremap <silent> <Leader>0 :!python<cr>
+" Neomake {{{
+let g:neomake_python_enabled_makers = ['flake8']
+autocmd! FileType python map <buffer> <leader>8 :Neomake<CR>
+" }}}
