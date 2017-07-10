@@ -11,7 +11,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#disable_rtp_load = 1
-let g:airline_extensions = ['tabline', 'neomake', 'hunks', 'whitespace', 'tmuxline', 'unite', 'netrw']
+let g:airline_extensions = ['tabline', 'neomake', 'hunks', 'whitespace', 'unite', 'netrw']
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -41,9 +41,11 @@ let g:airline_mode_map = {
      \ 's'  : 'S',
      \ 'S'  : 'S',
      \ }
-" tmuxline
-let g:tmuxline_powerline_separators = 0
-let g:tmuxline_preset = 'full'
+
+" tmuxline {{{
+" let g:tmuxline_powerline_separators = 0
+" let g:tmuxline_preset = 'full'
+" }}}
 
 " startify
 let g:startify_bookmarks = [ '~/.vimrc' ]
