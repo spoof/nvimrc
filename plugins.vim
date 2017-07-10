@@ -5,7 +5,7 @@
 let s:mac = has('mac')
 set sessionoptions-=options
 
-" airline
+" airline {{{
 let g:airline_powerline_fonts = 0
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep=''
@@ -22,13 +22,11 @@ let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 2 " splits and tab number
 let g:airline#extensions#tabline#show_tab_type = 2
 let g:airline#extensions#tabline#show_tab_type = 0
-" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#close_symbol = '✖'
-" let g:airline_theme='base16_ashes'
-let g:airline_theme='base16_eighties'
+let g:airline_theme='onedark'
 
 let g:airline_mode_map = {
      \ '__' : '-',
@@ -41,6 +39,7 @@ let g:airline_mode_map = {
      \ 's'  : 'S',
      \ 'S'  : 'S',
      \ }
+"}}}
 
 " tmuxline {{{
 " let g:tmuxline_powerline_separators = 0
