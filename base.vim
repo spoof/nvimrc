@@ -43,10 +43,8 @@ set wildmode=full           " <Tab> cycles between all matching choices.
 " Terminal settings {{{
 set termencoding=utf-8
 set mouse=a                 " enable mouse
-if version >= 730 && has("macunix")
-    " Default yank and paste go to Mac's clipboard
-    set clipboard=unnamed
-end
+" set clipboard=unnamed
+" set clipboard+=unnamedplus
 " }}}
 
 " Moving Around/Editing {{{
