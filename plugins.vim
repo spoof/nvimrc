@@ -174,7 +174,6 @@ function! s:unite_settings()
   nmap <buffer> <ESC> <Plug>(unite_exit)
 endfunction
 
-
 " }}}
 
 " Gundo {{{
@@ -261,6 +260,7 @@ endif
 " }}}
 
 " FZF {{{
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let $FZF_DEFAULT_OPTS = '--reverse'
 let g:fzf_nvim_statusline = 0
 let g:fzf_layout = { 'window': 'enew' }
